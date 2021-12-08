@@ -1,0 +1,21 @@
+{
+  "name": "nativo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniors90/seminario-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniors90/seminario-node/issues"
+  },
+  "homepage": "https://github.com/juniors90/seminario-node#readme"
+}
