@@ -1,14 +1,19 @@
-const http = require('http');
+const express = require("express");
+const users = require("./routes/user.routes.js")
 
-const hostname = 'localhost';
-const port = 3000;
+const app = express();
+app.set("port", process.env.PORT || 3000);
 
-const server = http.createServer((req, res)=>{
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hola Mundo desde el Servidor!!!...\n')
-});
+app.use(express.json());
+app.use("/api/users/", users)
 
-server.listen(port, hostname, ()=>{
-    console.log(`Server running at http://${hostname}:${port}`);
-});
+app.use( '/' , ( req, res) => {
+    res.json({message : ' Hi! '} )
+})
+
+app.listen( app.get("port"), () => {
+    console.log('Server ready in ', app.get("port"));
+})
+
+//const chalk = require('chalk' )
+//console.log(chalk.yellow( 'hi!' ))

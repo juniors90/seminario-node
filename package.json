@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/juniors90/seminario-node/issues"
   },
-  "homepage": "https://github.com/juniors90/seminario-node#readme"
+  "homepage": "https://github.com/juniors90/seminario-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
